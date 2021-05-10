@@ -130,7 +130,6 @@ bool TPQueue<T>::isFull() const
   return count==size;
 }
 
-};
 
 struct SYM {
   char ch;
