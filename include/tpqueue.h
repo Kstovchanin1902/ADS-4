@@ -50,14 +50,10 @@ void TPQueue<T>::push(const T & item)
     int inPlace = 0;
     bool flag = 0;
     T trans, trans2;
-    std::cout << "1" << std::endl;
-    std::cout << "begin = " << begin << " end = " << end << std::endl;
     if (beginC != end)
     {
         while (beginC != end)
         {
-            std::cout << "jkAl" << std::endl;
-            std::cout << "count = " << count << std::endl;
             if (!(arr[beginC].prior < item.prior))
             {
                 beginC++;
