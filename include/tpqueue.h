@@ -12,7 +12,7 @@ class TPQueue {
           end;
       int count;
    public:
-      TPQueue(): size(100), begin(0), end(0), count(0) {};
+      TPQueue(100);
       ~TPQueue();
       void push(const T &);
       T pop();
