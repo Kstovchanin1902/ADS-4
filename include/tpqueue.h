@@ -12,7 +12,7 @@ private:
        end;
    int count;
 public:
-   TPQueue(100);
+   TQueue(int =100);
    ~TPQueue();
    void push(const T &);
    T pop();
