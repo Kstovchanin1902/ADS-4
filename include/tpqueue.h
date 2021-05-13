@@ -5,20 +5,19 @@
 
 template <typename T>
 class TPQueue {
-      private:
-          T *arr;
-          int size;
-          int begin, end;
-          int count;
-    
-      public:
-          explicit TPQueue(int = 100);
-          ~TPQueue();
-          void push(const T &);
-          T pop();
-          T get() const;
-          bool isEmpty() const;
-          bool isFull() const;
+ private:
+     T *arr;
+     int size;
+     int begin, end;
+     int count;
+ public:
+     explicit TPQueue(int = 100);
+     ~TPQueue();
+     void push(const T &);
+     T pop();
+     T get() const;
+     bool isEmpty() const;
+     bool isFull() const;
 };
 template<typename T>
 TPQueue<T>::TPQueue(int sizeQueue) :
